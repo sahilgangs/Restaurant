@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/tvname"
+        android:text="Welcome"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/tvuserid"
+        android:text="userid"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/cuisinetype"
+        android:text="cuisine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/restotype"
+
+        android:text="resto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/occtype"
+        android:text="ocassion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/lat"
+        android:text="latitude"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:fontFamily="@font/pizza"
+        android:textColor="@android:color/white"
+        android:id="@+id/longi"
+        android:text="longitude"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:background="@drawable/mybutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Logout"/>
+
+</LinearLayout>

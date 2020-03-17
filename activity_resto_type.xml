@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@android:color/black"
+
+
+    tools:context="com.example.restaurant.RestoType">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Type"
+        android:fontFamily="@font/cafe"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:textSize="60dp">
+
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:text="Lounge"
+            android:textColor="@android:color/white"
+            android:onClick="checkButton"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:text="Bar"
+            android:textColor="@android:color/white"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:textColor="@android:color/white"
+            android:text="Pub"
+            android:onClick="checkButton"/>
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:text="Fine Dining"
+            android:textColor="@android:color/white"
+            android:onClick="checkButton"/>
+
+
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Your selection: "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_selected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/mybutton"
+        android:text="next" />
+
+</RelativeLayout>

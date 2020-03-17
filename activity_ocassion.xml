@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@android:color/black"
+
+    tools:context="com.example.restaurant.Ocassion">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Occasion"
+        android:fontFamily="@font/cafe"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:textSize="90dp">
+
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:textColor="@android:color/white"
+            android:onClick="checkButton"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:text="Meeting"
+            android:onClick="checkButton"/>
+
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/pizza"
+            android:text="Casual Dining"
+            android:onClick="checkButton"/>
+
+
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textColor="@android:color/white"
+        android:text="Your selection: "
+        android:fontFamily="@font/pizza"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textColor="@android:color/white"
+        android:text="Your selection: "
+        android:fontFamily="@font/pizza"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/text_view_selected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="submit" />
+
+</RelativeLayout>
